@@ -6,12 +6,11 @@ public abstract class Poligonos {
 
     private List<Lados> lados;
 
-
-    public Poligonos(List<Lados> lados, Figuras figuras) {
-        this.lados = lados;
+    public Poligonos() {
     }
 
-    public Poligonos() {
+    public Poligonos(List<Lados> lados) {
+        this.lados = lados;
     }
 
     public List<Lados> getLados() {

@@ -3,13 +3,14 @@ package org.example;
 public class Lados {
 
     private Integer longitud;
-    private Puntos puntos = new [2]Puntos;
-
-    public Lados(Integer longitud) {
-        this.longitud = longitud;
-    }
+    private Puntos puntos;
 
     public Lados() {
+    }
+
+    public Lados(Integer longitud, Puntos puntos) {
+        this.longitud = longitud;
+        this.puntos = puntos;
     }
 
     public Integer getLongitud() {
@@ -18,5 +19,13 @@ public class Lados {
 
     public void setLongitud(Integer longitud) {
         this.longitud = longitud;
+    }
+
+    public Puntos getPuntos() {
+        return puntos;
+    }
+
+    public void setPuntos(Puntos puntos) {
+        this.puntos = puntos;
     }
 }
