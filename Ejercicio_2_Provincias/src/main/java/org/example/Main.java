@@ -1,17 +1,19 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    Continente c1 = new Continente("America");
+    Pais p1 = new Pais("Argentina");
+    Pais p2 = new Pais("Uruguay");
+    Provincias pv1 = new Provincias("Mendoza");
+    Provincias pv2 = new Provincias("San Juan");
+    Provincias pv3 = new Provincias("Montevideo");
+    Ciudades cud1 = new Ciudades("Ciudad de Mendoza");
+    Ciudades cud2 = new Ciudades("Ciudad de Montevideo");
+
+
+
     }
 }
