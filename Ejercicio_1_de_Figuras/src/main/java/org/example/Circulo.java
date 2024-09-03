@@ -1,15 +1,14 @@
 package org.example;
 
-public class Circulo extends Elipses{
+public class Circulo extends Elipses {
 
     private Integer radio;
 
-    public Circulo(String semiejes, Figuras figuras) {
-        super(semiejes, figuras);
+    public Circulo() {
     }
 
-    public Circulo(String semiejes, Figuras figuras, Integer radio) {
-        super(semiejes, figuras);
+    public Circulo(int foco, Integer radio) {
+        super(foco);
         this.radio = radio;
     }
 
@@ -20,4 +19,10 @@ public class Circulo extends Elipses{
     public void setRadio(Integer radio) {
         this.radio = radio;
     }
+
+    @Override
+    public String toString() {
+        return "Circulo [radio=" + radio + ", foco=" + getFoco() + "]";
+    }
 }
+

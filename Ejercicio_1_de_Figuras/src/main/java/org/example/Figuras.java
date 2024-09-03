@@ -1,15 +1,17 @@
 package org.example;
 
+import java.util.List;
+
 public class Figuras {
 
     private String tamano;
-    private Elipses elipses;
-    private Poligonos poligonos;
+    private List<Elipses> elipses;
+    private List<Poligonos> poligonos;
 
-    public Figuras(Elipses elipses, Poligonos poligonos, String tamano) {
+    public Figuras(String tamano, List<Elipses> elipses, List<Poligonos> poligonos) {
+        this.tamano = tamano;
         this.elipses = elipses;
         this.poligonos = poligonos;
-        this.tamano = tamano;
     }
 
     public Figuras() {
@@ -23,20 +25,20 @@ public class Figuras {
         this.tamano = tamano;
     }
 
-    public Elipses getElipses() {
+    public List<Elipses> getElipses() {
         return elipses;
     }
 
-    public void setElipses(Elipses elipses) {
-        this.elipses = elipses;
+    public void setElipses(Elipses elipse) {
+        elipses.add(elipse);
     }
 
-    public Poligonos getPoligonos() {
+    public List<Poligonos> getPoligonos() {
         return poligonos;
     }
 
-    public void setPoligonos(Poligonos poligonos) {
-        this.poligonos = poligonos;
+    public void setPoligonos(Poligonos poligono) {
+        poligonos.add(poligono);
     }
 
 }

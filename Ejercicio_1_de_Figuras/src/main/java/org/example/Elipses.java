@@ -2,21 +2,20 @@ package org.example;
 
 public abstract class Elipses {
 
-    private String semiejes;
-
-    public Elipses(String semiejes) {
-        this.semiejes = semiejes;
-    }
+    private int foco;
 
     public Elipses() {
     }
 
-    public String getSemiejes() {
-        return semiejes;
+    public Elipses(int foco) {
+        this.foco = foco;
     }
 
-    public void setSemiejes(String semiejes) {
-        this.semiejes = semiejes;
+    public int getFoco() {
+        return foco;
     }
 
+    public void setFoco(int foco) {
+        this.foco = foco;
+    }
 }
