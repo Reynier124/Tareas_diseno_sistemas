@@ -10,8 +10,9 @@ public abstract class Impuestos {
     public Impuestos() {
     }
 
-    public Impuestos(String objeto, Integer baseImponible, Float alicuota) {
+    public Impuestos(String objeto, String sujeto, Integer baseImponible, Float alicuota) {
         this.objeto = objeto;
+        this.sujeto = sujeto;
         this.baseImponible = baseImponible;
         this.alicuota = alicuota;
     }
