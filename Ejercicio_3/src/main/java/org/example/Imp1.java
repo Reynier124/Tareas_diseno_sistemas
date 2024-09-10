@@ -12,7 +12,6 @@ public class Imp1 extends Impuestos {
     public float calcular() {
         Integer b = getBaseImponible();
         Float a = getAlicuota();
-
         return a * b;
     }
 }

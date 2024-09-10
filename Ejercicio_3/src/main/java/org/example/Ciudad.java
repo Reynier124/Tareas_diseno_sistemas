@@ -16,6 +16,7 @@ public class Ciudad {
         this.nombre = nombre;
         this.habitantes = habitantes;
         this.gastoTotal = gastoTotal;
+        this.recaudacionTotal = 0.0F;
     }
 
     public String getNombre() {
@@ -67,5 +68,14 @@ public class Ciudad {
             recaudacionTotal += impuestos[i].calcular();
         }
 
+    }
+
+    @Override
+    public String toString() {
+        return "Ciudad{" +
+                "nombre='" + nombre + '\'' +
+                ", gastoTotal=" + gastoTotal +
+                ", recaudacionTotal=" + recaudacionTotal +
+                '}';
     }
 }
