@@ -72,7 +72,7 @@ public class Lote {
     public Boolean Sembrar(Cereal c){
         for (Mineral m: c.getRequisitos()){
             for (Mineral m2: mineral){
-                if (m.getTipo() == m2.getTipo()){
+                if (m.getNombre() == m2.getNombre()){
                     if (m.getCantidad() > m2.getCantidad()){
                         return false;
                     }
