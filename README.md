@@ -1,4 +1,4 @@
-##INTEGRANTES:
+## INTEGRANTES:
 - Reynier Lopez
 - Camila Choque
 - Ian Olmedo
